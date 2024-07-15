@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 // const heading = React.createElement(
 //   "h1",
 //   { id: "heading", xyz: "abc" },
@@ -23,10 +26,29 @@
 
 // React.createElement is an object which when rendered gives HTML which browser understands
 
+// const parent = React.createElement("div", { id: "parent" }, [
+//   React.createElement("div", { id: "child" }, [
+//     React.createElement("h1", {}, "I'm h1 tag"),
+//     React.createElement("h2", {}, "I'm h2 tag"),
+//   ]),
+
+//   React.createElement("div", { id: "child2" }, [
+//     React.createElement("h1", {}, "I'm h1 tag"),
+//     React.createElement("h2", {}, "I'm h2 tag"),
+//   ]),
+// ]);
+
+// console.log(parent);
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(parent);
+
+//This code is hard to write, so we use JSX
+
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I'm h1 tag"),
-    React.createElement("h2", {}, "I'm h2 tag"),
+    React.createElement("h1", {}, "This is Namaste React 🚀"),
+    React.createElement("h2", {}, "dfgfdgfdgfd"),
   ]),
 
   React.createElement("div", { id: "child2" }, [
@@ -39,5 +61,3 @@ console.log(parent);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
-
-//This code is hard to write, so we use JSX
