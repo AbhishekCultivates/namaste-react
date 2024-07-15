@@ -1,22 +1,41 @@
-# Namaste React
+# Namaste React - Food App
 
-# Parcel
+Header
 
-- Dev Build
-- Local Server
-- Refreshing page due to = HMR = Hot Module Replacement
-- File Watching Algorithm - written in C++
-- Caching - Faster builds
-- Image Optimization
-  In production
-- Minification
-- Bundling
-- Compress files (remove white spaces)
-- Consistent Hashing
-- Code Splitting (split files)
-- Differential Bundling - Supports old browsers
-- Diagnostic
-- Error Handling
-- HTTPs
-- Tree Shaking - remove unused code
-- Different dev and production bundles
+- Logo
+- Nav Items
+  Body
+- Search
+- Restaurant Container
+  - Restaurant Card
+  - Dish Name
+  - Image
+  - Restaurant Name
+  - Rating
+  - Cuisines
+  - Time to Deliver
+
+Footer
+
+- Copyright
+- Links
+- Address
+- Contact
+
+Two types of Export/Import
+
+- Default Export/Import
+
+export default Component;
+import Component from "path";
+
+- Named Export/Import
+
+export const Component;
+import {Component} from "path";
+
+# React Hooks
+
+- Normal JS utility Functions
+- useState() - Superpowerful State Variable in React
+- useEffect()
